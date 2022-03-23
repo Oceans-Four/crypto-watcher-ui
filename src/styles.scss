@@ -1,7 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../styles/fonts.scss';
 a {
     text-decoration: none; //removes the line under links
     color: white;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
   }
 
  
