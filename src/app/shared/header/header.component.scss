@@ -3,6 +3,8 @@ header {
    .p-input-icon-left{
      
    }
+
+   
   
     .navbar {
       display: flex;
@@ -35,7 +37,15 @@ header {
           display: inline; //next to eachother
           margin-right: 15px; //push eachother apart
         }
+        
       }
+
+      //   button{
+      //   float: none;
+      //   display: inline;
+      //   align-content: right;
+        
+      // }
     }
   }
 
