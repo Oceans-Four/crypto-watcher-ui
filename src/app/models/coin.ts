@@ -1,6 +1,5 @@
 
-
-export interface Crypto {
+export interface Coin {
     symbol: string;
     name: string;
     iconUrl: string;
