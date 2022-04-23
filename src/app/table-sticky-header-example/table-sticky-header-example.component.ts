@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { CryptoService } from '../services/crypto.service';
 
 /**
  * @title Table with sticky header
@@ -8,9 +9,19 @@ import {Component} from '@angular/core';
   styleUrls: ['table-sticky-header-example.component.scss'],
   templateUrl: 'table-sticky-header-example.component.html',
 })
-export class TableStickyHeaderExample {
+export class TableStickyHeaderExample implements OnInit {
+  coin: any = [];
+  constructor(private cryptoService : CryptoService ){}
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+
+
+  ngOnInit(): void {
+      this.cryptoService.getCoins().subscribe((response)=>{
+          this.coin = response;
+          console.log(this.coin);
+      })
+  }
 }
 
 export interface PeriodicElement {

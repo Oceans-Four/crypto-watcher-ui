@@ -10,9 +10,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableStickyHeaderExample } from './table-sticky-header-example/table-sticky-header-example.component';
 import { MatTableModule } from '@angular/material/table' 
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, TableStickyHeaderExample],
-  imports: [MatTableModule, MatSliderModule,BrowserModule, AppRoutingModule, InputTextModule, BrowserAnimationsModule],
+  imports: [MatTableModule, MatSliderModule,BrowserModule, AppRoutingModule, InputTextModule, BrowserAnimationsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
