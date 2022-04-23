@@ -8,10 +8,10 @@ import { Coin } from '../models/coin';
   providedIn: 'root'
 })
 export class CryptoService {
-  static readonly BASE_API_URL: string = `${environment.mockBaseUrl}/cryptowatcher`;
+  static readonly BASE_API_URL: string = `${environment.apiBaseUrl}/cryptowatcher`;
   constructor(private http: HttpClient) { }
 
-  public getEmployees(): Observable<Coin[]> {
+  public getCoins(): Observable<Coin[]> {
     return this.http.get<Coin[]>(`${CryptoService.BASE_API_URL}/coins`);
   }
 
