@@ -14,7 +14,6 @@ export class CryptoService {
   apiKey: string = 'coinranking0689dc69731519976cf7c7d50553a4f40e5d59ced02b791e';
   
   getCoins(){
-      return this.http.get('https://api.coinranking.com/v2/coins');
+      return this.http.get('https://62564f8552d8738c692dcc47.mockapi.io/api/v1/cryptowatcher/coins');
   }
-
 }
