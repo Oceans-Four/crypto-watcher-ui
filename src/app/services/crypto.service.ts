@@ -1,5 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
+import { environment } from 'src/environments/environment';
+import { Coin } from '../models/coin';
 
 @Injectable({
   providedIn: 'root'
@@ -7,13 +10,11 @@ import { HttpClient } from '@angular/common/http';
 
 
 export class CryptoService {
-
+  static readonly BASE_API_URL: string = `${environment.apiBaseUrl}/cryptowatcher`;
   constructor(private http: HttpClient) { }
 
-  baseUrl: string = 'https://api.coinranking.com/v2';
-  apiKey: string = 'coinranking0689dc69731519976cf7c7d50553a4f40e5d59ced02b791e';
-  
-  getCoins(){
-      return this.http.get('https://62564f8552d8738c692dcc47.mockapi.io/api/v1/cryptowatcher/coins');
+  public getCoins(): Observable<Coin[]> {
+    return this.http.get<Coin[]>(`${CryptoService.BASE_API_URL}/coins`);
   }
+
 }
