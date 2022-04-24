@@ -7,6 +7,8 @@ import { Coin } from '../models/coin';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class CryptoService {
   static readonly BASE_API_URL: string = `${environment.apiBaseUrl}/cryptowatcher`;
   constructor(private http: HttpClient) { }
