@@ -16,7 +16,7 @@
       <!-- Icon Column -->
       <ng-container matColumnDef="icon">
         <th mat-header-cell *matHeaderCellDef> Icon </th>
-        <td mat-cell *matCellDef="let element"> {{element.iconUrl}} </td>
+        <td mat-cell *matCellDef="let element"><img src = {{element.iconUrl}} width="30" height="30"/> </td>
       </ng-container>
   
       <!-- Symbol Column -->
@@ -36,4 +36,4 @@
     </table>
   </div>
 
-  <pre>{{coin | json}}</pre>
+  <!-- <pre>{{coin | json}}</pre> -->

@@ -10,7 +10,7 @@ import { Coin } from '../models/coin';
 
 
 export class CryptoService {
-  static readonly BASE_API_URL: string = `${environment.apiBaseUrl}/cryptowatcher`;
+  static readonly BASE_API_URL: string = `${environment.mockBaseUrl}/cryptowatcher`;
   constructor(private http: HttpClient) { }
 
   public getCoins(): Observable<Coin[]> {
