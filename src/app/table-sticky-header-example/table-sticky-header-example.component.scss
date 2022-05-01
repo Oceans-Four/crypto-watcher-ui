@@ -1,16 +1,24 @@
-.example-container {
-    height: 680px;
-    overflow: auto;
-  }
+.table-container {
+  margin: 2rem 2rem 2rem 2rem;
+  height: 60rem;
+  overflow: auto;
+}
 
-  th {
-      background-color: rgb(60, 143, 216);
-      color:rgb(0, 7, 12);
-      font-size: 15px;
-      font-weight: bolder;
+@media screen and (max-width: 680px) {
+  .table-container {
+    margin: 0;
+    height: 680px;
   }
-  
-  table {
-    width: 100%;
-    border-bottom:black;
-  }
+}
+
+th {
+  background-color: rgb(60, 143, 216);
+  color: rgb(0, 7, 12);
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+table {
+  width: 100%;
+  border-bottom: black;
+}

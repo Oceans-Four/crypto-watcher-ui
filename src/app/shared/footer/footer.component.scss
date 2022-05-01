@@ -1,17 +1,17 @@
 //@import '../styles/colors';
 
-footer{
-display:flex;
-   position:fixed;
-   bottom:0;
-   width:100%;
-   height: 85px;;   /* Height of the footer */
-   background:rgb(0, 7, 10);
-   justify-content: center;
-   justify-content:center;
-   align-items:center;
-   border-top: black;
+footer {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 85px; /* Height of the footer */
+  background: rgb(0, 7, 10);
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  border-top: black;
 }
 span {
-    color: white;
-  }
+  color: white;
+}
