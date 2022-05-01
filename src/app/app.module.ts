@@ -11,13 +11,15 @@ import { TableStickyHeaderExample } from './table-sticky-header-example/table-st
 import { MatTableModule } from '@angular/material/table'
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { BreakingNewsStripComponent } from './pages/breaking-news-strip/breaking-news-strip.component';
 @NgModule({
   declarations: [
     AppComponent, 
     HeaderComponent, 
     FooterComponent, 
     HomeComponent, 
-    TableStickyHeaderExample],
+    TableStickyHeaderExample, 
+    BreakingNewsStripComponent],
   imports: [
     MatTableModule, 
     MatSliderModule, 
