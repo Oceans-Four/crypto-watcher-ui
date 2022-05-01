@@ -1,50 +1,48 @@
-
 header {
-   .p-input-icon-left{
-     display: block;
-   }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      display: flex;
-      justify-content: space-around;
-      padding: 0.5rem 1rem; //up and down, left/right from sided
-      height: 65px;
-      background-color: #0c0c0c;
-      margin: 0px;
-      border-bottom: 1px solid (255, 255, 255, 0.1);
-
-      &-logo {//still inside nav bar, put logo properties and links
-        display: block;
-        img {
-          width: 60px;
-        }
-      }
-  
-      &-links {//parent is navbar-links
-        
-        display: block;
-        margin: 0;
-        list-style: none;//romoves bullet point from list
-        li {//li element
-            
-            font-size: 17px;
-            text-align: center;
-            float: none;
-          display: inline; //next to eachother
-          margin-right: 15px; //push eachother apart
-        }
-        
-      }
-
-      //   button{
-      //   float: none;
-      //   display: inline;
-      //   align-content: right;
-        
-      // }
-    }
+  .p-input-icon-left {
+    display: block;
   }
 
- 
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 1rem; //up and down, left/right from sided
+    height: 5rem;
+    background-color: #161616;
+    margin: 0px;
+    border-bottom: 1px solid (255, 255, 255, 0.1);
+
+    &-logo {
+      //still inside nav bar, put logo properties and links
+      display: block;
+      img {
+        width: 3.5rem;
+      }
+    }
+
+    &-links {
+      //parent is navbar-links
+
+      display: block;
+      margin: 0;
+      list-style: none; //romoves bullet point from list
+      li {
+        //li element
+
+        font-size: 17px;
+        text-align: center;
+        float: none;
+        display: inline; //next to eachother
+        margin-right: 15px; //push eachother apart
+      }
+    }
+
+    //   button{
+    //   float: none;
+    //   display: inline;
+    //   align-content: right;
+
+    // }
+  }
+}

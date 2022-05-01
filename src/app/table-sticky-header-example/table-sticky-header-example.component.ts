@@ -14,7 +14,7 @@ import { HttpErrorResponse } from "@angular/common/http";
 export class TableStickyHeaderExample implements OnInit {
   coin: any = [];
   constructor(private cryptoService : CryptoService ){}
-  displayedColumns = ['symbol', 'name', 'icon', 'marketCap', 'price'];
+  displayedColumns = ['icon', 'symbol', 'price', 'name', 'marketCap'];
   public coins: Coin[] = [];
   
   //@Input() 
