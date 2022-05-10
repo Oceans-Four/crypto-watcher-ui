@@ -8,7 +8,6 @@ import { Coin } from '../models/coin';
   providedIn: 'root'
 })
 
-
 export class CryptoService {
   static readonly BASE_API_URL: string = `${environment.mockBaseUrl}/cryptowatcher`;
   constructor(private http: HttpClient) { }
