@@ -20,7 +20,7 @@ export class NewsBannerComponent implements OnInit {
 
   ngOnInit(): void {
     this.cryptoService.getNews().subscribe((response: any)=>{
-        this.news = response.data;
+        this.news = response.data[0].screen_data;
         console.log(this.news);
     })
   }
