@@ -15,7 +15,7 @@ export class TableStickyHeaderExample implements OnInit {
   coin: any = [];
   constructor(private cryptoService : CryptoService ){}
   displayedColumns = ['icon', 'symbol', 'price', 'name', 'marketCap'];
-  public coins: Coin[] = [];
+  //public coins: Coin[] = [];
   
   //@Input() 
   data : any;

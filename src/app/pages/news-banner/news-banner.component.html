@@ -1,7 +1,12 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col" *ngFor="let item of newsItems">
-        <h2>{{item}}</h2>
+          <!-- <ng-container> -->
+            <pre>
+              {{news | json}}
+            </pre>
+            <!-- <img src = {{news}} width="50" height="50"/> -->
+          <!-- </ng-container> -->
       </div>
     </div>
   </div>
