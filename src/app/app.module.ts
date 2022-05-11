@@ -12,6 +12,7 @@ import { MatTableModule } from '@angular/material/table'
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BreakingNewsStripComponent } from './pages/breaking-news-strip/breaking-news-strip.component';
+import { NewsBannerComponent } from './pages/news-banner/news-banner.component';
 @NgModule({
   declarations: [
     AppComponent, 
@@ -19,7 +20,7 @@ import { BreakingNewsStripComponent } from './pages/breaking-news-strip/breaking
     FooterComponent, 
     HomeComponent, 
     TableStickyHeaderExample, 
-    BreakingNewsStripComponent],
+    BreakingNewsStripComponent, NewsBannerComponent],
   imports: [
     MatTableModule, 
     MatSliderModule, 
