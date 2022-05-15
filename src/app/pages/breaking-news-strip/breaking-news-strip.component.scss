@@ -32,7 +32,7 @@ $duration: 30s;
 .ticker-wrap {
   position: block;
   bottom: 0;
-  width: 100%;
+  // width: 100%;
   overflow: hidden;
   height: 3.5rem;
   background-color: rgba(#000, 0.9);
@@ -69,8 +69,16 @@ $duration: 30s;
 body {
   padding-bottom: 5rem;
 }
-h1,
+
 h2,
 p {
   padding: 0 5%;
+}
+
+.section-header {
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+hr {
+  height: .5rem;
 }

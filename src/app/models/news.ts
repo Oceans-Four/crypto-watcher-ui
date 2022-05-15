@@ -1,5 +1,5 @@
 export interface News {
-    HEADLINE: string;
-    news_link: string;
+    article_title: string;
+    article_href: string;
     related_image: string;
 }
