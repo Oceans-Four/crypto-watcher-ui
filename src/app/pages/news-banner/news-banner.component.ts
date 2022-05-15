@@ -10,7 +10,6 @@ export class NewsBannerComponent implements OnInit {
 
   news: any = [];
 
-
   newsItems: string[] = [
     'News Article 1',
     'News Article 2',
