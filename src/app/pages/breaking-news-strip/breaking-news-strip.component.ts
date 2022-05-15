@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CryptoService } from 'src/app/services/crypto.service';
+import { CoinMover } from 'src/app/models/coin-mover';
 
 @Component({
   selector: 'app-breaking-news-strip',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./breaking-news-strip.component.scss']
 })
 export class BreakingNewsStripComponent implements OnInit {
-
-  constructor() { }
+  coinMovers: CoinMover[] = [];
+  constructor(private cryptoService: CryptoService) {}
 
   ngOnInit(): void {
+    this.getCoinMovers();
   }
 
+  getCoinMovers(): void {
+    this.cryptoService.getCoinMovers().subscribe((response: CoinMover[]) => {
+      this.coinMovers = response;
+      console.log(this.coinMovers);
+    });
+  }
 }

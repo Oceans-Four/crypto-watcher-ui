@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/internal/Observable';
 import { environment } from 'src/environments/environment';
 import { Coin } from '../models/coin';
 import { News } from '../models/news';
+import { CoinMover } from '../models/coin-mover';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ import { News } from '../models/news';
 
 export class CryptoService {
   static readonly BASE_API_URL: string = `${environment.mockBaseUrl}/cryptowatcher`;
-  static readonly BASE_NEWS_URL: string = `${environment.mockNewsUrl2}`;
+  static readonly getNewsEndpoint: string = '';
   constructor(private http: HttpClient) { }
 
   public getCoins(): Observable<Coin[]> {
@@ -19,7 +20,10 @@ export class CryptoService {
   }
 
   public getNews(): Observable<News[]> {
-    return this.http.get<News[]>(`${CryptoService.BASE_NEWS_URL}`);
+    return this.http.get<News[]>(`${CryptoService.BASE_API_URL}/get-news`);
   }
 
+  public getCoinMovers(): Observable<CoinMover[]> {
+    return this.http.get<CoinMover[]>(`${CryptoService.BASE_API_URL}/biggest-movers`);
+  }
 }

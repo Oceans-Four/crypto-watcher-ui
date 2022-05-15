@@ -4,23 +4,22 @@ import { News } from '../../models/news';
 @Component({
   selector: 'app-news-banner',
   templateUrl: './news-banner.component.html',
-  styleUrls: ['./news-banner.component.scss']
+  styleUrls: ['./news-banner.component.scss'],
 })
 export class NewsBannerComponent implements OnInit {
-
-  news: any = [];
-
-  newsItems: string[] = [
-    'News Article 1',
-    'News Article 2',
-    'News Article 3',
-  ];
-  constructor(private cryptoService : CryptoService) { }
+  news: News[] = [];
+  // newsItems: string[] = ['News Article 1', 'News Article 2', 'News Article 3'];
+  constructor(private cryptoService: CryptoService) {}
 
   ngOnInit(): void {
-    this.cryptoService.getNews().subscribe((response: any)=>{
-        this.news = response.data[0].screen_data;
-        console.log(this.news);
-    })
+    this.getNews();
+    this.news.slice(0, 2);
+  }
+
+  getNews(): void {
+    this.cryptoService.getNews().subscribe((response: News[]) => {
+      this.news = response;
+      console.log(this.news);
+    });
   }
 }
