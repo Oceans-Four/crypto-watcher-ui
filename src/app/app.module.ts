@@ -20,7 +20,8 @@ import { NewsBannerComponent } from './pages/news-banner/news-banner.component';
     FooterComponent, 
     HomeComponent, 
     TableStickyHeaderExample, 
-    BreakingNewsStripComponent, NewsBannerComponent],
+    BreakingNewsStripComponent, 
+    NewsBannerComponent],
   imports: [
     MatTableModule, 
     MatSliderModule, 
@@ -28,7 +29,8 @@ import { NewsBannerComponent } from './pages/news-banner/news-banner.component';
     AppRoutingModule, 
     InputTextModule, 
     BrowserAnimationsModule, 
-    HttpClientModule],
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
