@@ -3,15 +3,15 @@
     <div class="col" *ngFor="let item of news; let i = index">
       <ng-container class="news-items-container">
         <h3>
-          {{item?.headline}}
+          {{item?.HEADLINE}}
         </h3>
-        <a title="{{item.headline}}" href="{{item.news_link}}">
-          <div>
-            <picture>
-              <img src="{{item?.related_image_big}}" width="400" alt="{{item.headline}}" />
-            </picture>
-          </div>
-        </a>
+        <div>
+          <picture>
+            <a title="{{item.HEADLINE}}" href="{{item.news_link}}">
+              <img src="{{item?.related_image_big}}" width="400" alt="{{item.HEADLINE}}" />
+            </a>
+          </picture>
+        </div>
       </ng-container>
     </div>
   </div>
