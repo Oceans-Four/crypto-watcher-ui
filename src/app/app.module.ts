@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BreakingNewsStripComponent } from './pages/breaking-news-strip/breaking-news-strip.component';
 import { NewsBannerComponent } from './pages/news-banner/news-banner.component';
+import { CarouselModule } from 'primeng/carousel';
+import { PaginatorModule } from 'primeng/paginator';
 @NgModule({
   declarations: [
     AppComponent, 
@@ -29,7 +31,9 @@ import { NewsBannerComponent } from './pages/news-banner/news-banner.component';
     AppRoutingModule, 
     InputTextModule, 
     BrowserAnimationsModule, 
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent],

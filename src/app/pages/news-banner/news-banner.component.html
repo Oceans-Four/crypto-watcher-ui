@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row">
     <div class="col" *ngFor="let item of news; let i = index">
       <ng-container class="news-items-container">
@@ -15,4 +15,23 @@
       </ng-container>
     </div>
   </div>
-</div>
+</div> -->
+
+<p-carousel  [numVisible]="5" 
+             [value]="news" 
+             [autoplayInterval]="3000"
+             [circular]="true" 
+             [responsiveOptions]="responsiveOptions">
+  <ng-template let-item pTemplate="item">
+    <div class="news-items-container">
+    <picture>
+        <a title="{{item.HEADLINE}}" href="{{item.news_link}}">
+          <img src="{{item?.related_image_big}}" alt="{{item.HEADLINE}}" />
+        </a>
+        <span>{{item?.HEADLINE}}</span>
+    </picture>
+    </div>
+  </ng-template>
+</p-carousel>
+
+
