@@ -18,7 +18,7 @@ export class BreakingNewsStripComponent implements OnInit {
   getCoinMovers(): void {
     this.cryptoService.getCoinMovers().subscribe((response: CoinMover[]) => {
       this.coinMovers = response;
-      console.log(this.coinMovers);
+      //console.log(this.coinMovers);
     });
   }
 }

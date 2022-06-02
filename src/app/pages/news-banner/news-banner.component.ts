@@ -8,8 +8,27 @@ import { News } from '../../models/news';
 })
 export class NewsBannerComponent implements OnInit {
   news: News[] = [];
+  responsiveOptions: any[] = [];
   // newsItems: string[] = ['News Article 1', 'News Article 2', 'News Article 3'];
-  constructor(private cryptoService: CryptoService) {}
+  constructor(private cryptoService: CryptoService) {
+    this.responsiveOptions = [
+      {
+          breakpoint: '1024px',
+          numVisible: 3,
+          numScroll: 3
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 2,
+          numScroll: 2
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1,
+          numScroll: 1
+      }
+  ];
+  }
 
   ngOnInit(): void {
     this.getNews();
