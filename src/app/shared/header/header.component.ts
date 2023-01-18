@@ -14,7 +14,11 @@ export class HeaderComponent implements OnInit {
   }
 
   searchChanged() {
-    
+    alert('Site is under construction.');
+    }
+
+    handleClick(){
+      alert('Site is under construction.');
     }
 
 }

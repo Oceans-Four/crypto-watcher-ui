@@ -15,6 +15,10 @@ import { BreakingNewsStripComponent } from './pages/breaking-news-strip/breaking
 import { NewsBannerComponent } from './pages/news-banner/news-banner.component';
 import { CarouselModule } from 'primeng/carousel';
 import { PaginatorModule } from 'primeng/paginator';
+import { ContactComponent } from './contact/contact.component';
+import { MatInputModule } from "@angular/material/input";
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent, 
@@ -23,7 +27,9 @@ import { PaginatorModule } from 'primeng/paginator';
     HomeComponent, 
     TableStickyHeaderExample, 
     BreakingNewsStripComponent, 
-    NewsBannerComponent],
+    NewsBannerComponent, 
+    ContactComponent
+  ],
   imports: [
     MatTableModule, 
     MatSliderModule, 
@@ -33,7 +39,9 @@ import { PaginatorModule } from 'primeng/paginator';
     BrowserAnimationsModule, 
     HttpClientModule,
     CarouselModule,
-    PaginatorModule
+    PaginatorModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
