@@ -37,32 +37,13 @@ header {
       }
     }
 
-    @media only screen and (max-width: 991px){
-      li{
+    @media only screen and (max-width: 680px){
+      li, input, button {
         display: none;
-        }
-        .p-input-icon-left {
-          height: auto;
-          width: auto;
-          margin-left: 0;
-        }
-        input{
-          width: 50%;
-          display: none;
-        }
-        button{
-          display: none;
         }
         .title{
           font-size: 1.3rem;
         }
-        #main-nav{
-          padding: 0px 0px 0px 0px !important;
-        }
-        .icon{
-          align-self: left;
-        }
-
     }
   }
 }
